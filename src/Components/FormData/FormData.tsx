@@ -10,7 +10,7 @@ interface FormValues {
 }
 
 const Form: React.FC = () => {
-  const [submitting, setSubmitting] = useState(false);
+  const [submitting, setSubmitting] = useState<boolean>(false);
 
   const validationSchema = Yup.object().shape({
    name: Yup.string()
